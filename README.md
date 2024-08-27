@@ -60,8 +60,8 @@ This project uses MySQL as the database. Follow these steps to set up the databa
 
 ### TheaterController
 **1. Add Theater**
--**Post** : `http://localhost:8080/theater/addNew`
-**Request Body:**
+- **Post** : `http://localhost:8080/theater/addNew`
+- **Request Body:**
 ```json
 {
     "name": "CineMax",
