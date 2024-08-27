@@ -6,7 +6,9 @@ import com.sb.movie.exceptions.MovieAlreadyExist;
 import com.sb.movie.repositories.MovieRepository;
 import com.sb.movie.request.MovieRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MovieServiceImpl implements MovieService{
 
     @Autowired
