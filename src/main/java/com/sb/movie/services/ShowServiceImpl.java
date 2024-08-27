@@ -29,6 +29,7 @@ public class ShowServiceImpl implements ShowService{
     @Autowired
     private ShowRepository showRepository;
 
+    @Override
     public String addShow(ShowRequest showRequest) {
         Show show = ShowConvertor.showDtoToShow(showRequest);
 
@@ -60,6 +61,7 @@ public class ShowServiceImpl implements ShowService{
         return "Show has been added Successfully";
     }
 
+    @Override
     public String associateShowSeats(ShowSeatRequest showSeatRequest) throws ShowDoesNotExists {
         Optional<Show> showOpt = showRepository.findById(showSeatRequest.getShowId());
 
