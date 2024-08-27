@@ -21,12 +21,11 @@
 ## Getting Started
 To set up the project on your local machine, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/JavaaTechSolutions/movie-ticket-booking-system.git
-2. Navigate to the project directory
-3. Configure the database settings in `application.properties` file.
-4. Build the project using Maven: `mvn clean install`
-5. Run the application: `mvn spring-boot:run`
-6. The application will be accessible at `http://localhost:8080`.
+1. Navigate to the project directory
+2. Configure the database settings in `application.properties` file.
+3. Build the project using Maven: `mvn clean install`
+4. Run the application: `mvn spring-boot:run`
+5. The application will be accessible at `http://localhost:8080`.
 
 ## Database Setup
 This project uses MySQL as the database. Follow these steps to set up the database:
