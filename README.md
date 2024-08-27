@@ -57,7 +57,7 @@ This project uses MySQL as the database. Follow these steps to set up the databa
 }
 ```
 **Response:**
-"The movie has been added successfully"
+- `The movie has been added successfully`
 
 ### TheaterController
 **1. Add Theater**
@@ -69,8 +69,8 @@ This project uses MySQL as the database. Follow these steps to set up the databa
     "address": "123 Main Street, Springfield"
 }
 ```
-**Requspose :**
-`Theater has been saved Successfully`
+**Response Body :**
+- `Theater has been saved Successfully`
 
 **Request Body:**
 ```
@@ -79,8 +79,8 @@ This project uses MySQL as the database. Follow these steps to set up the databa
     "address": "456 Elm Street, Springfield"
 }
 ```
-**Requspose :**
-`Theater has been saved Successfully```
+**Response Body:**
+- `Theater has been saved Successfully`
 
 **Request Body:**
 ```
@@ -89,12 +89,12 @@ This project uses MySQL as the database. Follow these steps to set up the databa
     "address": "123 Main Street, Springfield"
 }
 ```
-**Response :** 
-`Theater is already Present on this Address```
+**Response Body :** 
+- `Theater is already Present on this Address`
 
 **2. Add Theater Seats**
 - **Post** : `http://localhost:8080/theater/addTheaterSeat`
-**Request Body:**
+- **Request Body:**
 ```  
 {
     "address": "123 Main Street, Springfield",
@@ -103,8 +103,8 @@ This project uses MySQL as the database. Follow these steps to set up the databa
     "noOfClassicSeat": 80
 } 
 ```
-**Response :**
- `Theater Seats have been added successfully```
+**Response Body :**
+ - `Theater Seats have been added successfully`
 
 **Request Body:**
 ```  
@@ -116,12 +116,12 @@ This project uses MySQL as the database. Follow these steps to set up the databa
 }
 ```
 **Response :**
-`Theater is not present in this address```
+- `Theater is not present in this address`
 
 ### ShowController
 **1. Add Show**
 -**Post :** `http://localhost:8080/show/addNew`
-**Request Body:**
+- **Request Body:**
 ```
 {
   "showStartTime": "18:00:00",
@@ -130,12 +130,12 @@ This project uses MySQL as the database. Follow these steps to set up the databa
   "movieId": 1
 }
 ```
-**Response :**
- `Show has been added Successfully```
+- **Response Body :**
+- `Show has been added Successfully```
 
 **2. Associate Show Seats:**
--**Post :** `http://localhost:8080/show/associateSeats`
-**Request Body:**
+- **Post :** `http://localhost:8080/show/associateSeats`
+- **Request Body:**
 ```
 {
   "showId": 1,
@@ -143,13 +143,14 @@ This project uses MySQL as the database. Follow these steps to set up the databa
   "priceOfClassicSeat": 100
 }
 ```
-**Response :**
-`Show seats have been associated successfully```
+- **Response Body:**
+- `Show seats have been associated successfully```
 
 ### UserController
-**add user**
+- **add user**
 - **Post :** `http://localhost:8080/user/addNew`
-**Request Body:** 
+- **Request Body:** 
+```
 {
     "name": "John Doe",
     "age": 30,
@@ -159,13 +160,14 @@ This project uses MySQL as the database. Follow these steps to set up the databa
     "emailId": "johndoe@example.com",
     "roles": "USER"
 }
-**Response :**
-`User Saved Successfully`
+```
+- **Response :**
+- `User Saved Successfully`
 
 ### TicketController
-**Book ticket**
+- **Book ticket**
 - **Post :** `http://localhost:8080/ticket/book`
-**Request Body:**
+- **Request Body:**
 ```
 {
     "showId": 1,
@@ -190,3 +192,4 @@ This project uses MySQL as the database. Follow these steps to set up the databa
 }
 ```
 
+### Thank You !!!
